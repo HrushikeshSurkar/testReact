@@ -1,0 +1,117 @@
+.search-bar {
+    width: 350px;
+    margin: 20px 0; /* Center the search bar horizontally */
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+/* Flex container for the search bar */
+.container {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+}
+
+/* Custom carousel to ensure buttons are placed correctly */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    width: 5%; /* Ensure buttons have some width outside the content */
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Add background color to icons for visibility */
+    border-radius: 50%; /* Optional: Make the buttons round */
+}
+
+/* Adjust positioning to ensure buttons are outside of cards */
+.custom-carousel .carousel-control-prev {
+    left: -40px; /* Move the button further left */
+}
+
+.custom-carousel .carousel-control-next {
+    right: -40px; /* Move the button further right */
+}
+
+/* Style the profile card */
+.profile-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for a flatter look */
+    border-radius: 6px; /* Slightly smaller border radius */
+    text-align: left;  
+    font-family: 'Arial', sans-serif;
+    min-height: 250px; /* Reduced minimum height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    overflow: hidden; /* Ensures the card content doesn't overflow */
+}
+
+.profile-card:hover {
+    transform: translateY(-10px); /* Move the card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth */
+}
+
+/* Align text to the left */
+.text-left {
+    text-align: left !important;
+}
+
+.card-name {
+    font-weight: bold;
+    font-size: 1.1rem; /* Reduced font size */
+    margin-bottom: 0.4rem; /* Reduced margin */
+}
+
+/* Fallback avatar styling */
+.avatar-placeholder {
+    height: 200px; /* Reduced height */
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 60px; /* Reduced size of the avatar icon */
+    background-color: #f0f0f0; 
+    border-radius: 6px; /* Slightly smaller border radius */
+}
+
+/* Profile image size */
+.profile-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Show more button styling */
+button.w-100 {
+    font-size: 0.9rem; /* Reduced font size */
+    font-weight: bold;
+}
+
+/* General Styles */
+
+/* Adjustments for input group */
+.search-input {
+    border-radius: 5px 0 0 5px; /* Rounded corners (left) */
+    box-shadow: none;
+    height: 36px;
+}
+
+.search-input:focus {
+    box-shadow: none !important; /* Ensure no box shadow on focus */
+    border-color: #80bdff; /* Change border color on focus */
+    outline: 0; /* Remove outline on focus */
+}
+
+.clear-button {
+    margin-left: -1px; /* To connect with the input field */
+}
+
+/* Ensure consistent height for buttons */
+button {
+    height: 36px; /* Match height with input */
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        min-width: 100%; /* Adjust minimum height */
+    }
+    
+}
